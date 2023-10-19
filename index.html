@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Epic 340B Application</title>
+</head>
+<body>
+    <nav style="background-color: purple; height:10vh;">
+        <a>LOGO</a>
+    </nav>
+    <main>
+        <section class="grid-section"></section>
+        <section class="form-sidebar hidden">
+            <div class="form-identification">
+                <!-- 
+                Patient ID: [Field]
+                First Name: [Field]
+                Middle Name: [Field]
+                Last Name: [Field]
+                Date of Birth: [Field]
+                Gender: [Field] -->
+                <h2 class="form-header">Patient Identification</h2>
+                
+                <label for="PatientID">Patient ID</label>
+                <input type="text" name="PatientID" id="PatientID">
+    
+                <label for="FirstName">FirstName</label>
+                <input type="text" name="FirstName" id="FirstName">
+    
+                <label for="MiddleName">MiddleName</label>
+                <input type="text" name="MiddleName" id="MiddleName">
+    
+                <label for="LastName">LastName</label>
+                <input type="text" name="LastName" id="LastName">
+    
+                <label for="DateOfBirth">DateOfBirth</label>
+                <input type="date" name="DateOfBirth" id="DateOfBirth">
+    
+                <label for="Gender">Gender</label>
+                <input type="text" name="Gender" id="Gender">
+            </div>
+    
+            <div class="form-address">
+                <!-- 
+                Street Address: [Field]
+                City: [Field]
+                State: [Field]
+                Country: [Field]
+                Postal Code: [Field] -->
+                <h2 class="form-header">Patient Address</h2>
+                
+                <label for="StreetAddress">Street Address</label>
+                <input type="text" name="StreetAddress" id="StreetAddress">
+
+                <label for="City">City</label>
+                <input type="text" name="City" id="City">
+
+                <label for="State">State</label>
+                <select id="stateDropdown">
+                    <option value="" disabled selected>Select a state</option>
+                </select>
+
+                <label for="Country">Country</label>
+                <select id="CountryDropdown">
+                    <option value="" disabled selected>Select a country</option>
+                </select>
+
+                <label for="Postal">Postal</label>
+                <input type="text" name="Postal" id="Postal">
+            </div>
+            
+            <div class="form-information">
+                <!-- 
+                Social Security Number: [Field]
+                Enrollment Date: [Field]
+                Insurance: [Field]
+                Pharmacy: [Field]
+                Primary Care Expiration Date: [Field] -->
+                <h2 class="form-header">Patient Information</h2>
+
+                <label for="SocialSecurity">Social Security</label>
+                <input type="text" name="SocialSecurity" id="SocialSecurity">
+
+                <label for="EnrollmentDate">Enrollment Date</label>
+                <input type="date" name="EnrollmentDate" id="EnrollmentDate">
+
+                <label for="Insurance">Insurance</label>
+                <input type="text" name="Insurance" id="Insurance">
+
+                <label for="Pharmacy">Pharmacy</label>
+                <input type="text" name="Pharmacy" id="Pharmacy">
+
+                <label for="PrimaryCareExpiration">Primary Care Expiration</label>
+                <input type="date" name="PrimaryCareExpiration" id="PrimaryCareExpiration">
+            </div>
+            
+            <div class="form-care-information">
+                <!-- 
+                Notice of Election Expiration Date: [Field]
+                Primary Care Provider: [Field] -->
+                <h2 class="form-header">Care Information</h2>
+
+                <label for="NOE">NOE Expiration Date</label>
+                <input type="date" name="NOE" id="NOE">
+
+                <label for="PrimaryCareProvider">Primary Care Provider</label>
+                <input type="text" name="PrimaryCareProvider" id="PrimaryCareProvider">
+            </div>
+
+            <div class="form-election-coverage">
+                <!-- 
+                First Date Ineligible: [Field] - Date
+                Last Date Ineligible: [Field] - Date
+                Actual Renewal Date: [Field] - Date
+                Renewal Date Plus 6 months: [Field] - Date
+                Case Manager: [Field] -Text
+                340B Entity ID: [Field] -Text
+                DEA: [Field] -Text
+                National Provider Identifier: [Field] -Text
+                Status: [Field] --> 
+                <h2 class="form-header">Election/Coverage Information</h2>
+                
+                <label for="FirstDateIneligible">First Date Ineligible</label>
+                <input type="date" name="FirstDateIneligible" id="FirstDateIneligible">
+
+                <label for="LastDateIneligible">Last Date Ineligible</label>
+                <input type="date" name="LastDateIneligible" id="LastDateIneligible">
+
+                <label for="ActualRenewalDate">Actual Renewal Date</label>
+                <input type="date" name="ActualRenewalDate" id="ActualRenewalDate">
+
+                <label for="RenewalDatePlusSixMonths">Renewal Date (+6 Months)</label>
+                <input type="date" name="RenewalDatePlusSixMonths" id="RenewalDatePlusSixMonths">
+
+                <label for="CaseManager">Case Manager</label>
+                <input type="text" name="CaseManager" id="CaseManager">
+
+                <label for="340BEntityID">340B EntityID</label>
+                <input type="text" name="340BEntityID" id="340BEntityID">
+
+                <label for="DEA">DEA</label>
+                <input type="text" name="DEA" id="DEA">
+
+                <label for="NationalProviderIdentifier">National Provider Identifier</label>
+                <input type="text" name="NationalProviderIdentifier" id="NationalProviderIdentifier">
+
+                <label for="Status">Status</label>
+                <select id="Status">
+                    <option value="" disabled selected>Select Status</option>
+                </select>
+
+            </div>
+            
+        </section>
+    </main>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
